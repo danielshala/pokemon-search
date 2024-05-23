@@ -51,7 +51,7 @@ const PokemonSearch = () => {
         `https://pokeapi.co/api/v2/pokemon/${query.toLowerCase()}`
       );
       if (!response.ok) {
-        throw new Error("Pokémon non trovato");
+        throw new Error("Pokémon not found");
       }
       const data: Pokemon = await response.json();
       setPokemon(data);
