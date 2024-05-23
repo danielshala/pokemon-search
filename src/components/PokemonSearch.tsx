@@ -101,8 +101,9 @@ const PokemonSearch = () => {
                   width={200}
                 />
               </Card.Section>
+              
+              <Group justify="space-between" mt="md" mb="xs">
 
-              <Group position="apart" mt="md" mb="xs">
                 <Text fw={500}>
                   {pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}
                 </Text>
