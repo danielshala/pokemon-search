@@ -36,6 +36,12 @@ const PokemonSearch = () => {
   const [error, setError] = useState<string | null>(null);
 
   const handleSearch = async () => {
+
+    if (query.trim() === "") {
+    setError("Please enter a Pokémon name.");
+    return;
+  }
+    
     setLoading(true);
     setError(null);
     setPokemon(null);
