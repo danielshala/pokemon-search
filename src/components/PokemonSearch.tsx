@@ -71,7 +71,7 @@ const PokemonSearch = () => {
   return (
     <div style={{ maxWidth: 400, margin: "0 auto", padding: "1rem" }}>
       <TextInput
-        placeholder="Nome del Pokémon"
+        placeholder="Pokémon's name"
         value={query}
         onChange={(event) => setQuery(event.currentTarget.value)}
         onKeyPress={handleKeyPress}
@@ -81,7 +81,7 @@ const PokemonSearch = () => {
         disabled={loading}
         style={{ marginTop: "1rem" }}
       >
-        Cerca
+        Search
       </Button>
       {loading && <Loader style={{ marginTop: "1rem"}} />}
       {error && (
