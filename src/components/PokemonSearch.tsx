@@ -116,13 +116,13 @@ const PokemonSearch = () => {
               </Group>
 
               <Text size="sm" color="dimmed">
-                Peso: {pokemon.weight}
+                Weight: {pokemon.weight}
               </Text>
               <Text size="sm" color="dimmed">
-                Altezza: {pokemon.height}
+                Height: {pokemon.height}
               </Text>
               <Text size="sm" color="dimmed">
-                Tipo:{" "}
+                Type:{" "}
                 {pokemon.types
                   .map(
                     (t) =>
